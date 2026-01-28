@@ -102,31 +102,20 @@ document.querySelectorAll(".slider").forEach(slider => {
 /* ===========================
    Mobile Menu (Safe)
 =========================== */
-const btn = document.querySelector(".menu-btn");
-const nav = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links a");
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.main-nav');
 
-if (btn && nav) {
-  btn.addEventListener("click", e => {
-    e.stopPropagation();
-    btn.classList.toggle("active");
-    nav.classList.toggle("active");
-  });
+  if (!btn || !nav) {
+    console.log('menu elements not found');
+    return;
+  }
 
-  links.forEach(link => {
-    link.addEventListener("click", () => {
-      btn.classList.remove("active");
-      nav.classList.remove("active");
-    });
+  btn.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    console.log('menu toggled');
   });
-
-  document.addEventListener("click", e => {
-    if (!nav.contains(e.target) && !btn.contains(e.target)) {
-      btn.classList.remove("active");
-      nav.classList.remove("active");
-    }
-  });
-}
+});
 
 
 /* ===========================
@@ -245,4 +234,5 @@ img.addEventListener("touchend", e => {
 
   img.src = casesImages[current];
 });
+
 }
