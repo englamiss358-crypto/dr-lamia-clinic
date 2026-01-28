@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dermatology Clinic |  د/ لمياء ابراهيم </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!----google font----->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container header-flex">
+    <div class="logo">
+  <img src="images/logo1.jpeg" alt="Dermatology Clinic Logo">
+
+  <div class="logo-text">
+    <strong>د. لمياء إبراهيم سليمان</strong>
+    <span>أخصائية جلدية وتجميل</span>
+  </div>
+</div>
+
+    <nav class="main-nav">
+      <a href="index.html">الرئيسية</a>
+      <a href="html/service.html">الخدمات</a>
+      <a href="html/procedures.html">الإجراءات</a>
+      <a href="html/contact.html">تواصل معنا</a>
+    </nav>
+
+     <button id="menuToggle" class="menu-toggle">
+  القائمة <span>▾</span>
+</button>
+
+
+
+    <a href="html/contact.html" class="lux-btn">احجزي موعد</a>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <h1>رعاية متخصصة في الجلدية والتجميل</h1>
+      <p>
+        خبرة طبية، أجهزة حديثة، ونتائج طبيعية وآمنة
+      </p>
+      <a href="html/contact.html" class="lux-btn">احجزي موعدك الآن</a>
+    </div>
+
+    <div class="hero-card">
+      <img src="images/card1.png" alt="الدكتورة لمياء ">
+      <h3>د. لمياء إبراهيم سليمان</h3>
+      <span>Dermatology & Aesthetic Specialist</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div>
+      <strong>10+</strong>
+      <span>سنوات خبرة</span>
+    </div>
+    <div>
+      <strong>تشخيص دقيق</strong>
+      <span>خطة علاج مخصّصة لكل حالة </span>
+    </div>
+    <div>
+      <strong>100%</strong>
+      <span>رعاية آمنة</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="services">
+  <div class="container">
+    <h2 class="section-title">أهم الخدمات</h2>
+    <p class="section-subtitle">
+      رعاية طبية متكاملة بأحدث التقنيات لعلاج البشرة والتجميل
+    </p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>علاج حب الشباب</h3>
+        <p>تشخيص دقيق وخطة علاج مخصصة لكل حالة</p>
+      </div>
+
+      <div class="service-card">
+        <h3>جلسات الليزر</h3>
+        <p>إزالة الشعر وعلاج مشاكل البشرة بأمان</p>
+      </div>
+
+      <div class="service-card">
+        <h3>علاج التصبغات</h3>
+        <p>تفتيح وتوحيد لون البشرة بطرق طبية</p>
+      </div>
+
+      <div class="service-card">
+        <h3>نضارة البشرة</h3>
+        <p>جلسات مخصصة لإشراقة طبيعية وصحية</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEFORE / AFTER ================= -->
+<section class="cases-section">
+<button class="cases-card" id="openCases">
+<div class="cases-icon">🩺</div>
+<h3>Before & After Cases</h3>
+<p>View real treatment results</p>
+</button>
+</section>
+
+
+<!-- Modal -->
+<div class="cases-modal" id="casesModal" aria-hidden="true">
+<div class="cases-overlay"></div>
+
+
+<div class="cases-box">
+<button class="cases-close" id="closeCases">×</button>
+
+
+<div class="cases-header">
+<h4>Clinical Results</h4>
+<span>Dermatology Treatments</span>
+<span id="caseLabel">Before</span>
+</div>
+
+
+
+<div class="cases-slider">
+<img id="casesImage" src="images/befor1.jpeg" alt="Before and After Case" />
+<div class="label before">Before</div>
+<div class="label after">After</div>
+</div>
+
+
+<div class="cases-slider">
+<img id="casesImage" src="images/befor2.jpeg" alt="Before and After Case" />
+<div class="label before">Before</div>
+<div class="label after">After</div>
+</div>
+
+
+<div class="cases-slider">
+<img id="casesImage" src="images/befor3.jpeg" alt="Before and After Case" />
+<div class="label before">Before</div>
+<div class="label after">After</div>
+</div>
+
+
+<div class="cases-slider">
+<img id="casesImage" src="images/befor4.jpeg" alt="Before and After Case" />
+<div class="label before">Before</div>
+<div class="label after">After</div>
+</div>
+
+
+<div class="cases-controls">
+<button id="prevCase">◀</button>
+<button id="nextCase">▶</button>
+</div>
+</div>
+</div>
+
+<!-- ================= CTA ================= -->
+
+
+<!-- ===== CTA ===== -->
+<section class="procedures-cta">
+  <div class="container">
+    <h2>احجز جلستك الآن</h2>
+    <a href="html/contact.html" class="lux-btn">تواصل معنا</a>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <p>© Dermatology Clinic – All Rights Reserved</p>
+</footer>
+
+<script src="javascript.js"></script>
+</body>
+</html>
