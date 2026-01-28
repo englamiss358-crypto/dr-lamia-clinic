@@ -657,8 +657,8 @@ right: 18px;
 }
 /* ===== Desktop ===== */
 @media (min-width: 769px) {
-  .menu-toggle {
-    display: none;
+  .main-nav.active {
+    display: flex;
   }
 
   .main-nav {
